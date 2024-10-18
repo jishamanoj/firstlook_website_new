@@ -12,7 +12,7 @@ const Contact = () => {
                             User Feedback
                         </p>
                         <p className='font-light w-3/4 text-[12px] sm:text-[21px]'>
-                            We value your feedback and strive for continuous improvement. Share your thoughts on how we can enhance your experience—we're dedicated to prioritizing your needs.
+                            We value your feedback and strive for continuous improvement. Share your thoughts on how we can enhance your experience—we&apos;re dedicated to prioritizing your needs.
                         </p>
                         <Link href='/feedback'>
                             <p className='w-3/4 text-[#FC3657] text-[12px] sm:text-[21px] font-medium'>

@@ -473,7 +473,7 @@ export default function Home() {
               whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
               viewport={{ once: true, amount: 0.8 }} className="mx-auto text-center text-sm sm:text-xl xl:text-2xl font-light mt-4 sm:mt-10">
               Sign up quickly and dive into the community. <br />
-              For a more personalized experience, we'll gather a few extra details as you go.
+              For a more personalized experience, we&apos;ll gather a few extra details as you go.
             </motion.p>
             <motion.p initial={{ y: "10vw", opacity: 0 }}
               whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
