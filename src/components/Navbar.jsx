@@ -60,17 +60,17 @@ const Navbar = ({ fontcolor, percent }) => {
                 <div className='relative px-14 flex justify-between items-center'>
                     {/* Side links container */}
                     <div className={`flex text-xl text-${fColor} items-center gap-10 mx-10`}>
-                        <Link href='/' className='cursor-pointer font-regular'>
+                        <Link href='/' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                                 How it works
                             </p>
                         </Link>
-                        <Link href='/membershippolicy' className='cursor-pointer font-regular'>
+                        <Link href='/membershippolicy' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                                 Policy
                             </p>
                         </Link>
-                        <Link href='/' className='cursor-pointer font-regular'>
+                        <Link href='/' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                                 Support
                             </p>
@@ -84,12 +84,12 @@ const Navbar = ({ fontcolor, percent }) => {
 
                     {/* Right links container */}
                     <div className={`flex text-xl text-${fColor} items-center gap-10 mx-10`}>
-                        <Link href='/' className='cursor-pointer font-regular'>
+                        <Link href='/' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                                 About
                             </p>
                         </Link>
-                        <Link href='/contact' className='cursor-pointer font-regular'>
+                        <Link href='/contact' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                                 Contact
                             </p>
@@ -135,7 +135,7 @@ const Navbar = ({ fontcolor, percent }) => {
                                     key={link.href}
                                     onClick={() => { setIsOpen(false) }}
                                     href={link.href}
-                                    className='cursor-pointer font-regular'
+                                    className='cursor-pointer font-light'
                                 >
                                     <motion.p
                                         initial={{ y: "5vw", opacity: 0 }}

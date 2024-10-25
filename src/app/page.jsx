@@ -5,7 +5,6 @@ import reel1 from '../../public/asset/reel_1.png'
 import proposal from '../../public/asset/propose_img.png'
 import chat1 from '../../public/asset/chat_img.png'
 import chat2 from '../../public/asset/chat_2.png'
-import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
@@ -70,7 +69,7 @@ export default function Home() {
               className="absolute sm:hidden block top-0 left-0 w-full h-full object-cover" />
 
             <div className="relative z-10 mx-auto max-w-screen-xl px-6 sm:px-20 py-28 lg:py-36 lg:flex lg:items-center lg:px-16">
-              <div className="max-w-2xl text-left mt-72 sm:mt-40 md:mt-54 lg:mt-32">
+              <div className="max-w-2xl text-left mt-72 sm:mt-40 md:mt-54 lg:mt-36">
                 <motion.h1
                   initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.15 } }}
@@ -92,9 +91,9 @@ export default function Home() {
                   initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.25 } }}
                   viewport={{ once: true, amount: 0.8 }}
-                  className="mt-2 lg:mt-5 max-w-lg text-base sm:text-xl md:text-2xl lg:text-3xl font-light text-white"
+                  className="mt-2 lg:mt-5 max-w-xl text-base sm:text-xl md:text-2xl lg:text-3xl font-light text-white"
                 >
-                  Bringing singles together globally
+                  Marriage &nbsp;.&nbsp; Relationship &nbsp;.&nbsp; Dating &nbsp;.&nbsp; Friendship
                 </motion.p>
 
                 <motion.div
@@ -131,9 +130,9 @@ export default function Home() {
           </motion.h2>
           <motion.p initial={{ y: "10vw", opacity: 0 }}
             whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
-            viewport={{ once: true, amount: 0.8 }} className="font-light text-sm sm:text-xl xl:text-2xl md:max-w-[90%] lg:max-w-[80%] xl:max-w-5xl text-start sm:text-center mt-4 lg:mt-8">
+            viewport={{ once: true, amount: 0.8 }} className="font-light text-sm sm:text-xl xl:text-2xl md:max-w-[90%] lg:max-w-[80%] xl:max-w-4xl text-start sm:text-center mt-4 lg:mt-8">
             Offering a seamless journey from search to connection, chat, and beyond.
-            With verified accounts and a trusted platform, finding your match is easier than ever. Welcome to a new era of matchmaking, where simplicity meets security, and love is just a click away. Say goodbye to complexities and hello to simplicity.
+            With verified accounts and a trusted platform, finding your match is easier than ever. Welcome to a new era of matchmaking, where simplicity meets security, and love is just a click away. <br />Say goodbye to complexities and hello to simplicity.
           </motion.p>
         </div>
 
@@ -162,7 +161,7 @@ export default function Home() {
               </motion.h1>
               <motion.p initial={{ y: "10vw", opacity: 0 }}
                 whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
-                viewport={{ once: true, amount: 0.8 }} className="mt-4 mb-6 sm:mt-10 sm:mb-12 text-sm sm:text-xl xl:text-2xl lg:max-w-[60%] xl:max-w-2xl font-light">Experience peace of mind with our stringent verification process. Connect confidently with active and authentic profiles, ensuring meaningful connections every time. </motion.p>
+                viewport={{ once: true, amount: 0.8 }} className="mt-4 mb-6 sm:mt-10 sm:mb-12 text-sm sm:text-xl xl:text-2xl lg:max-w-[60%] xl:max-w-[38rem] font-light">Experience peace of mind with our stringent verification process. We require a valid government ID for every account, ensuring only genuine, active profiles can connect.</motion.p>
               <motion.div initial={{ y: "10vw", opacity: 0 }}
                 whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
                 viewport={{ once: true, amount: 0.8 }} className="flex justify-start sm:mb-0 mb-1.5">
@@ -185,12 +184,12 @@ export default function Home() {
                 initial={{ y: "10vw", opacity: 0 }}
                 whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.2 } }}
                 viewport={{ once: true, amount: 0.8 }}
-                className="h-96"
+                className="lg:h-[24rem] xl:h-[25.5rem]"
               >
                 <Image
                   src={img1}
                   alt="verified-profile"
-                  className="object-contain h-96" />
+                  className="object-contain lg:h-[24rem] xl:h-[25.5rem]" />
               </motion.div>
             </div>
           </div>
@@ -220,7 +219,7 @@ export default function Home() {
             </div>
             <div className="container flex flex-col justify-center  xl:p-6 mx-auto sm:py-12 lg:flex-row lg:justify-between">
               <div className="flex flex-col justify-center pl-8 lg:p-10 xl:p-10 rounded-sm lg:max-w-2xl xl:max-w-3xl text-left">
-                <div className="sm:hidden block mt-5">
+                <div className="mb-5 sm:hidden block mt-5">
                   <motion.svg initial={{ y: "10vw", opacity: 0 }}
                     whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
                     viewport={{ once: true, amount: 0.8 }} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +230,7 @@ export default function Home() {
                     <path d="M12.625 19.6752V17.8752C12.625 15.5652 14.26 14.6202 16.255 15.7752L17.815 16.6752L19.375 17.5752C21.37 18.7302 21.37 20.6202 19.375 21.7752L17.815 22.6752L16.255 23.5752C14.26 24.7302 12.625 23.7852 12.625 21.4752V19.6752Z" stroke="#444444" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </motion.svg>
                 </div>
-                <div className="sm:block hidden">
+                <div className="mb-12 sm:block hidden">
                   <motion.svg initial={{ y: "10vw", opacity: 0 }}
                     whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
                     viewport={{ once: true, amount: 0.8 }} width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,15 +243,15 @@ export default function Home() {
                 </div>
                 <motion.h1 initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
-                  viewport={{ once: true, amount: 0.8 }} className="text-2xl sm:text-5xl lg:text-5xl xl:text-6xl mt-6">Video Reels <br />
+                  viewport={{ once: true, amount: 0.8 }} className="text-2xl sm:text-5xl lg:text-5xl xl:text-6xl">Video Reels <br />
                   bring your profile to life !
                 </motion.h1>
                 <motion.p initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
-                  viewport={{ once: true, amount: 0.8 }} className="mt-5 mb-4 text-sm sm:text-xl xl:text-2xl sm:mb-6  font-light">Showcase your personality like never before with video intros and show reels. Let your charisma shine through movements, background music, and even your own voice.</motion.p>
+                  viewport={{ once: true, amount: 0.8 }} className="mt-4 mb-6 sm:mt-10 sm:mb-12 text-sm sm:text-xl xl:text-2xl font-light">Showcase your personality like never before with video intros and show reels. Let your charisma shine through movements, background music, and even your own voice.</motion.p>
                 <motion.div initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
-                  viewport={{ once: true, amount: 0.8 }} className="flex items-center font-light flex-row space-y-1 space-x-2 justify-start sm:mb-0 mb-5">
+                  viewport={{ once: true, amount: 0.8 }} className="flex items-center font-light flex-row space-y-1 space-x-2 justify-start sm:mb-0 mb-1.5">
                   <div className="sm:block hidden">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M12 22.5C14.7848 22.5 17.4555 21.3938 19.4246 19.4246C21.3938 17.4555 22.5 14.7848 22.5 12C22.5 9.21523 21.3938 6.54451 19.4246 4.57538C17.4555 2.60625 14.7848 1.5 12 1.5C9.21523 1.5 6.54451 2.60625 4.57538 4.57538C2.60625 6.54451 1.5 9.21523 1.5 12C1.5 14.7848 2.60625 17.4555 4.57538 19.4246C6.54451 21.3938 9.21523 22.5 12 22.5ZM12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24Z" fill="black" />
@@ -270,7 +269,7 @@ export default function Home() {
               <div className="lg:block hidden">
                 <motion.div initial={{ y: "10vw", opacity: 0 }}
                   whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.2 } }}
-                  viewport={{ once: true, amount: 0.8 }} className="flex items-center w-[95%] mt-8 lg:mt-5 h-72 lg:h-96 xl:-ml-5">
+                  viewport={{ once: true, amount: 0.8 }} className="flex items-center w-[95%] mt-8 lg:mt-14 xl:mt-20 h-72 lg:h-96 xl:-ml-5">
                   <Image src={reel1} alt="" className="" />
                 </motion.div>
               </div>
@@ -279,7 +278,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center items-center">
           <section className="bg-white rounded-3xl w-[95%] xl:w-[1150px]">
-            <div className="container flex flex-col justify-center p-6 lg:p-8 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div className="container flex flex-col justify-center p-6 lg:p-8 mx-auto lg:flex-row lg:justify-between">
               <motion.div initial={{ y: "10vw", opacity: 0 }}
                 whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.2 } }}
                 viewport={{ once: true, amount: 0.8 }} className="flex items-center justify-center p-6 mt-8 lg:mt-28 xl:mt-6 h-full">
@@ -362,7 +361,7 @@ export default function Home() {
                       </motion.svg>
                     </div>
                   </div>
-                  <div className="sm:block hidden sm:mt-10 lg:mt-0">
+                  <div className="sm:block hidden sm:mt-10 lg:mt-6">
                     <div className="flex justify-end mb-10">
                       <motion.svg initial={{ y: "10vw", opacity: 0 }}
                         whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.4 } }}
