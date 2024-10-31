@@ -152,7 +152,7 @@ export default function Home() {
                       initial={{ y: "10vw", opacity: 0 }}
                       whileInView={{ y: 1, opacity: 1, transition: { type: "spring", stiffness: 50, delay: 0.25 } }}
                       viewport={{ once: true, amount: 0.8 }}
-                      className="mt-2 max-w-xl text-base font-light text-white"
+                      className="mt-2 max-w-2xl text-sm font-light text-white"
                     >
                       Marriage &nbsp;.&nbsp; Relationship &nbsp;.&nbsp; Dating &nbsp;.&nbsp; Friendship
                     </motion.p>
