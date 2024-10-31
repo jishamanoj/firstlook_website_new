@@ -32,7 +32,7 @@ const Contact = () => {
                             Tamil Nadu, India - 600 002
                         </p>
                         <p className='font-light w-3/4 text-[12px] sm:text-[21px] mt-4'>
-                            Mail - hello@firstlook.pro
+                            Mail - mail@firstlook.pro
                         </p>
                         <p className='font-light w-3/4 text-[12px] sm:text-[21px] mt-4'>
                             Tel - 91 9072208666, 91 9072205666

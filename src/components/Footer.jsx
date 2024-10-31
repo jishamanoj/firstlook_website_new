@@ -83,7 +83,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="w-full flex justify-center flex-col items-center">
-                        <p className='text-[#444444] text-xl text-center font-antonia'>© 2024 by FIRSTLOOK</p>
+                        <p className='text-[#444444] text-xs text-center font-antonia'>© 2024 by FIRSTLOOK</p>
                     </div>
                 </div>
             </div>

@@ -129,7 +129,7 @@ const Navbar = ({ fontcolor, percent }) => {
 
                         <hr />
 
-                        <nav className='flex flex-col justify-center items-center h-screen text-xl font-semibold space-y-5 -mt-10'>
+                        <nav className='flex flex-col justify-center items-center h-screen text-xl font-semibold space-y-10 -mt-14'>
                             {links.map((link, index) => (
                                 <Link
                                     key={link.href}
