@@ -128,7 +128,7 @@ export default function Home() {
 
               {/* Content Container - Changed positioning to be more consistent */}
               <div className="relative z-10 h-full flex items-end">
-                <div className="w-full px-6 pb-20">
+                <div className="w-full px-6 pb-28">
                   <div className="max-w-2xl">
                     <motion.h1
                       initial={{ y: "10vw", opacity: 0 }}
