@@ -58,7 +58,6 @@ const Navbar = ({ fontcolor, percent }) => {
         >
             <div className='xl:block hidden m-8 mx-20'>
                 <div className='relative px-14 flex justify-between items-center'>
-                    {/* Side links container */}
                     <div className={`flex text-xl text-${fColor} items-center gap-10 mx-10`}>
                         <Link href='/' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
@@ -77,12 +76,10 @@ const Navbar = ({ fontcolor, percent }) => {
                         </Link>
                     </div>
 
-                    {/* Centered logo */}
                     <Link href='/' className='absolute left-1/2 transform -translate-x-1/2'>
                         <Image className='cursor-pointer transform transition-transform duration-100 ease-in-out hover:scale-110' src={logo} alt="logo" />
                     </Link>
 
-                    {/* Right links container */}
                     <div className={`flex text-xl text-${fColor} items-center gap-10 mx-10`}>
                         <Link href='/' className='cursor-pointer font-light'>
                             <p className="inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
@@ -153,7 +150,6 @@ const Navbar = ({ fontcolor, percent }) => {
                 :
                 <div className='xl:hidden block mt-0'>
                     <div className='flex justify-between items-center p-3'>
-                        {/* Side links container */}
                         <div onClick={() => setIsOpen(true)}>
                             {
                                 fColor === 'black' ?
@@ -171,7 +167,6 @@ const Navbar = ({ fontcolor, percent }) => {
                             }
                         </div>
 
-                        {/* Centered logo */}
                         <Link href={"/"}>
                             {
                                 fColor === 'black' ?
@@ -186,7 +181,6 @@ const Navbar = ({ fontcolor, percent }) => {
 
                         </Link>
 
-                        {/* Right links container */}
                         <Link href='/download'>
                             {
                                 fColor === 'black' ?
